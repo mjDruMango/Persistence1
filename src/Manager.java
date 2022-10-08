@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Manager
 {
@@ -67,9 +68,32 @@ public class Manager
                 System.out.println(e);
             }
         }
-
-
-
     }
 
+    public void addEmployee(int id, String firstName, String lastName, int hireYear){
+        //add new file to /long directory
+    }
+
+    public void deleteEmployee(int id){
+        //search for file with employee ID, delete that file
+    }
+
+    public void updateEmployee(int id, String firstName, String lastName, int hireYear){
+        //update correct file if exists based on id, cannot change id (maybe create employee if id doesn't exist?)
+    }
+
+    public Employee getEmployee(int id){
+        return new Employee(); //placeholder
+        //search for employee by ID
+    }
+
+    public Employee getEmployee(String lastName){
+        return new Employee(); //placeholder
+        //search for employee by last name
+    }
+
+    public ArrayList<Employee> findAllEmployeesByLastName(String lastName){
+        return new ArrayList<Employee>(); //placeholder
+        //return a list of employees with the provided last nameAdd
+    }
 }
